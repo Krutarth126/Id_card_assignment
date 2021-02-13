@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID card Generator</title>
+    <link rel="stylesheet" href="Card.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <h4>Virtual ID Card Generator</h4>
+        </div>
+    </nav>
+    <div class="Card">
+        <div class="LeftCard">
+            <label for="Name">Enter Your Name:</label>
+            <!-- <i class="fa fa-user icon"></i> -->
+            <input type="text" name="Name" id="Myname" >
+            <label for="College" >Enter Your College:</label>
+            <!-- <i class="fa fa-university"></i> -->
+            <input type="text" name="College" id="Mycollege">
+            <label for="Location">Enter Your Location:</label>
+            <!-- <i class="fa fa-map-marker-alt"></i> -->
+            <input type="text" name="Location" id="Myloc">
+            <label for="Upload">Upload Your Photo:</label>
+            <input type="file" name="upload" id="Myphoto" accept="image/*" onchange="loadImage(event)" >
+            <button id="Btn">Submit</button>
+        </div>
+        <div class="RightCard">
+            <div id="Temp">ID Card</div>
+            <div class="inside">
+                <div class="span">
+                    <span >Name:<strong class="name"></strong></span>
+                    <span >College:<strong class="college"></strong></span>
+                    <span >Location:<strong class="loc"></strong></span>
+                </div>
+                <div class="profile">
+                    <img id="abc" src="">
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="card.js"></script>
+</body>
+</html>
